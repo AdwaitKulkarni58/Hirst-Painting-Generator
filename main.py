@@ -8,6 +8,14 @@ screen.colormode(255)
 
 my_turtle.shape("circle")
 
+size_of_turtle = 20
+
+my_turtle.speed(1)
+
+screen.screensize(400, 400, "yellow")
+
+my_turtle.goto(-400, 400)
+
 colors = cg.extract("image.jpg",30)
 
 lst_of_color = []
