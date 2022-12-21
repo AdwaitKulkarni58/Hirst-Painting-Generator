@@ -8,13 +8,9 @@ screen.colormode(255)
 
 my_turtle.shape("circle")
 
-size_of_turtle = 20
+my_turtle.speed("fastest")
 
-my_turtle.speed(1)
-
-screen.screensize(400, 400, "yellow")
-
-my_turtle.goto(-400, 400)
+my_turtle.setheading(225)
 
 colors = cg.extract("image.jpg",30)
 
@@ -29,6 +25,10 @@ for color in colors:
 
 for rgb_tuple in lst_of_color:
     my_turtle.fillcolor(rgb_tuple)
-    my_turtle.forward(10)
+    my_turtle.pendown()
+    my_turtle.forward(5)
+    my_turtle.penup()
+    my_turtle.forward(5)
+    my_turtle.pendown()
 
 screen.exitonclick()
